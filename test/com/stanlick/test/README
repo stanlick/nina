@@ -1,0 +1,14 @@
+Notes
+
+Logic to compute "workingDaysOpen" is computed in realtime as ElapsedUtil is accessing current LocalDate to
+calculate work days since ticket was received
+
+1) Ticket object has only a "received on" date.  When a ticket is closed, the number of work days it was open is
+stored in that ticket object.
+
+2) Ticket contains a close() method that determines total weekdays open and populates Ticket attribute (for SQL UPDATE)
+
+3) Number of weekdays an open ticket has remained open is determined by asking the ticket object getWorkingDaysOpen()
+
+4) Asking a closed ticket object for its number of "workingDaysOpen" will simply return the prior computed number
+of days without any further processing.
