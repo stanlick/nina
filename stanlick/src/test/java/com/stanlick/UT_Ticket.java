@@ -1,4 +1,4 @@
-package com.stanlick.test;
+package com.stanlick;
 
 import org.junit.Test;
 

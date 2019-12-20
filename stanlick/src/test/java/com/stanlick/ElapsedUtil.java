@@ -1,4 +1,4 @@
-package com.stanlick.test;
+package com.stanlick;
 
 import java.time.DayOfWeek;
 import java.time.LocalDate;
@@ -9,7 +9,6 @@ public class ElapsedUtil {
     private static LocalDate today = LocalDate.now();
 
     public static long calcWeekDaysBetweenTodayAnd(final LocalDate start) {
-        System.out.println("calcWeekDaysBetweenTodayAnd being calculated...");
         return calcWeekDaysBetweenTodayAnd(start, today);
     }
 
