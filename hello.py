@@ -1,2 +1,2 @@
-def hello_print():
+def sprinter():
     print('hello')
