@@ -1,5 +1,2 @@
-#
-#
-#
-#
-#five
+def hello():
+    print('hello')
